@@ -1,0 +1,34 @@
+# OS / Editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# Secrets — never commit
+.env
+*.pem
+credentials.json
+secrets.*
+
+# Large / generated outputs (use Git LFS or external links if needed)
+# Uncomment if files exceed 50MB:
+# *.pbix
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Local notes not for public repo
+notes-private/
+drafts/
+
+# Deloitte confidential — keep case studies anonymized; do not upload:
+# - client-named files
+# - internal Deloitte templates
+# - engagement codes / client logos
