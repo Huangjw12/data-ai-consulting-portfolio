@@ -178,7 +178,7 @@ Reference notes: [Fraud typologies cheatsheet](./projects/tm-dashboard/DATA_SCHE
 
 ## Contact
 
-- **Email:** your.email@example.com  
+- **Email:** huangwendy166@gmail.com  
 - **LinkedIn:** [linkedin.com/in/YOUR_PROFILE](https://linkedin.com/in/YOUR_PROFILE)  
 - **GitHub:** [Huangjw12/data-ai-consulting-portfolio](https://github.com/Huangjw12/data-ai-consulting-portfolio)
 
