@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>登录 — Spontan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="auth.css" />
+</head>
+<body>
+  <div class="auth">
+    <a class="auth__back" href="index.html">← 返回浏览</a>
+
+    <div class="auth__card">
+      <div class="auth__brand">
+        <span class="auth__logo">Spontan</span>
+        <p class="auth__tagline">遇见下一段旅程</p>
+      </div>
+
+      <div class="auth__tabs" role="tablist">
+        <button class="auth__tab auth__tab--active" type="button" role="tab" data-tab="login" aria-selected="true">登录</button>
+        <button class="auth__tab" type="button" role="tab" data-tab="register" aria-selected="false">注册</button>
+      </div>
+
+      <form class="auth__form" id="loginForm" data-panel="login">
+        <label class="auth__field">
+          <span class="auth__label">邮箱</span>
+          <input class="auth__input" type="email" name="email" placeholder="you@example.com" autocomplete="email" required />
+        </label>
+        <label class="auth__field">
+          <span class="auth__label">密码</span>
+          <input class="auth__input" type="password" name="password" placeholder="••••••••" autocomplete="current-password" required minlength="6" />
+        </label>
+        <p class="auth__error" id="loginError" hidden></p>
+        <button class="auth__submit" type="submit">登录</button>
+      </form>
+
+      <form class="auth__form auth__form--hidden" id="registerForm" data-panel="register">
+        <label class="auth__field">
+          <span class="auth__label">昵称</span>
+          <input class="auth__input" type="text" name="username" placeholder="你的旅行昵称" autocomplete="username" required minlength="2" maxlength="24" />
+        </label>
+        <label class="auth__field">
+          <span class="auth__label">邮箱</span>
+          <input class="auth__input" type="email" name="email" placeholder="you@example.com" autocomplete="email" required />
+        </label>
+        <label class="auth__field">
+          <span class="auth__label">密码</span>
+          <input class="auth__input" type="password" name="password" placeholder="至少 6 位" autocomplete="new-password" required minlength="6" />
+        </label>
+        <label class="auth__field">
+          <span class="auth__label">确认密码</span>
+          <input class="auth__input" type="password" name="confirmPassword" placeholder="再次输入密码" autocomplete="new-password" required minlength="6" />
+        </label>
+        <p class="auth__error" id="registerError" hidden></p>
+        <button class="auth__submit" type="submit">创建账号</button>
+      </form>
+    </div>
+
+    <p class="auth__footer">登录后可同步发布与心动记录</p>
+  </div>
+
+  <script src="auth.js"></script>
+</body>
+</html>
