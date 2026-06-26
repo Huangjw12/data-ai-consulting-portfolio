@@ -1,116 +1,81 @@
-# Jingwen (Wendy) Huang — Compliance & Fraud Analytics Portfolio
+# Jingwen (Wendy) Huang — Crypto Compliance & Fraud Analytics Portfolio
 
-> **Compliance · Fraud Analytics · Data & AI** — Big Four background translating AML/KYC, transaction monitoring, and fraud investigation into scalable analytics, rules optimization, and executive dashboards for fintech and crypto platforms.
+> **Branch:** `crypto` — job-search portfolio for crypto exchange Risk / Compliance / Fraud analytics roles (APAC).  
+> **Main branch:** general data & consulting materials.
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?logo=linkedin)](https://linkedin.com/in/YOUR_PROFILE)
-[![GitHub](https://img.shields.io/badge/GitHub-Huangjw12-181717?logo=github)](https://github.com/Huangjw12)
-[![PL-300](https://img.shields.io/badge/In%20Progress-PL--300%20Data%20Analyst-0078D4?logo=microsoft)](https://learn.microsoft.com/en-us/credentials/certifications/data-analyst-associate/)
-[![Email](https://img.shields.io/badge/Email-Contact-red?logo=gmail)](mailto:your.email@example.com)
+[![GitHub](https://img.shields.io/badge/GitHub-Huangjw12-181717?logo=github)](https://github.com/Huangjw12/data-ai-consulting-portfolio/tree/crypto)
+[![PL-300](https://img.shields.io/badge/In%20Progress-PL--300-0078D4?logo=microsoft)](https://learn.microsoft.com/en-us/credentials/certifications/data-analyst-associate/)
+[![CCAS](https://img.shields.io/badge/Planned-ACAMS%20CCAS-green)]()
 
-**Open to:** Data Analyst (Risk) · Compliance Analytics · Fraud Analytics Manager · Business Analytics Manager (Crypto/Fintech)  
-**Location:** Asia (Singapore · Hong Kong · Remote) · also open to Nordic fintech/regulated roles
-
----
-
-## About Me
-
-Deloitte consultant with a **Computer Science** degree and **5 years** across **compliance advisory**, **fraud / data analytics**, and **management consulting**. I bridge three worlds that crypto exchanges need in one hire:
-
-1. **Regulatory & control mindset** — KYC/CDD, transaction monitoring, SAR/STR workflows, professional scepticism  
-2. **Hands-on analytics** — SQL, Python, Power BI, rule performance metrics, false-positive analysis  
-3. **Consulting delivery** — stakeholder workshops, KPI frameworks, executive storytelling, cross-functional alignment
-
-> *All portfolio data is **synthetic or public**. No client confidential information. Deloitte engagements are anonymized.*
+**Target roles:** Data Analyst (Risk) · Compliance Analytics · Fraud Analytics · Business Analytics Manager  
+**Target companies:** Binance · OKX · Crypto.com · Bybit · Chainalysis · Elliptic  
+**Location:** Singapore · Hong Kong · Remote APAC · **Available from:** [Month Year]
 
 ---
 
-## Why Compliance + Fraud + Crypto
+## Elevator Pitch
 
-| Traditional strength | Crypto exchange application |
-|---------------------|----------------------------|
-| Compliance advisory @ Deloitte | KYC onboarding controls, sanctions alignment, FATF VASP expectations |
-| Fraud / data analytics | Account takeover, bonus abuse, layering, rule tuning, case investigation |
-| BI & reporting | TM ops dashboards, alert health, analyst workload, SAR pipeline metrics |
-| GenAI exploration | Alert triage, case summarization, pattern extraction (human-in-the-loop) |
+Deloitte consultant (**5 years**) with **Computer Science** degree. I combine **compliance advisory**, **fraud investigation**, and **hands-on analytics** (SQL, Power BI, Python) to help crypto platforms improve **KYC fraud prevention**, **transaction monitoring**, and **compliance ops KPIs**.
+
+> All data is **synthetic or public**. Client names anonymized.
 
 ---
 
-## Featured Project: Transaction Monitoring Dashboard
+## Portfolio Progress
 
-**Business question:** How does a Risk / Compliance ops leader monitor alert volume, rule health, false-positive rates, and investigation SLA in one view?
+| Project | Status | Link |
+|---------|--------|------|
+| **01 — Transaction Monitoring Dashboard** | 🟡 In progress | [projects/01-tm-dashboard/](./projects/01-tm-dashboard/) |
+| **02 — On-Chain AML Explorer** | ⚪ Planned | [projects/02-onchain-aml-explorer/](./projects/02-onchain-aml-explorer/) |
+| **03 — Compliance KPI Framework** | 🟡 Draft | [projects/03-compliance-kpi-framework/](./projects/03-compliance-kpi-framework/) |
+| **04 — SQL Alert Analytics** | ⚪ Planned | [projects/04-sql-alert-analytics/](./projects/04-sql-alert-analytics/) |
+| **Case Studies (Deloitte)** | 🟡 Templates ready | [case-studies/](./case-studies/) |
 
-| | |
-|---|---|
-| **Scenario** | Synthetic crypto exchange — deposits, withdrawals, P2P, spot trades |
-| **Tools** | SQL · Power BI (star schema) · Python (optional data generation) |
-| **Schema** | [Full data dictionary & DDL](./projects/tm-dashboard/DATA_SCHEMA.md) |
-| **Artifacts** | `schema.sql` · sample CSVs · `.pbix` (in progress) |
+Legend: 🟢 Done · 🟡 In progress · ⚪ Planned
 
-**Dashboard pages (planned):**
-- **Ops Overview** — alerts/day, open cases, MTTR, SLA breach rate  
-- **Rule Health** — hit rate, FP rate, TP rate by rule & typology  
-- **Geography & KYC** — alerts by country, KYC tier, onboarding channel  
-- **Case Drill-down** — analyst workload, disposition funnel, SAR candidates  
+---
+
+## Featured Project: TM Dashboard
+
+Synthetic **crypto exchange transaction monitoring** dataset + Power BI star schema.
 
 ```bash
-# Generate synthetic dataset (no real user data)
-cd projects/tm-dashboard
+cd projects/01-tm-dashboard
+pip install pandas numpy
 python generate_sample_data.py
+# Import data/*.csv into Power BI — see DATA_SCHEMA.md
 ```
 
----
+| Page | KPIs |
+|------|------|
+| Ops Overview | Alert volume · Open cases · MTTR |
+| Rule Health | FP rate · TP rate · Hit rate by rule |
+| Geo & KYC | Country risk · KYC tier · Onboarding channel |
+| Case Management | SLA compliance · SAR funnel · Analyst workload |
 
-## Other Projects
-
-### E-Commerce Analytics — SQL (foundational)
-
-| | |
-|---|---|
-| **Tools** | SQL, window functions, CTEs |
-| **Queries** | Retention · RFM · YoY · Top N · funnel |
-| **Folder** | [./sql/](./sql/) |
-
-### Automated Reporting Pipeline — Python
-
-| | |
-|---|---|
-| **Tools** | pandas, openpyxl |
-| **Use case** | Repeatable ops reporting automation |
-| **Folder** | [./python/](./python/) |
-
-### On-Chain AML Explorer *(planned)*
-
-Public blockchain data + sanctions list concept demo — wallet risk flags, funds-flow narrative, OSINT-style investigation notes.
+📄 [Schema & field dictionary](./projects/01-tm-dashboard/DATA_SCHEMA.md) · [SQL DDL](./projects/01-tm-dashboard/schema.sql)
 
 ---
 
-## Case Studies (Deloitte — Anonymized)
+## Case Studies
 
-| # | Title | Crypto relevance |
-|---|-------|----------------|
-| 1 | [Compliance & Data Controls](./case-studies/case-study-template-1-data-governance.md) | KYC data quality · golden source · control monitoring |
-| 2 | [Financial & Operational Analytics](./case-studies/case-study-template-2-financial-analytics.md) | Fraud loss analytics · control effectiveness reporting |
-| 3 | [AI-Enabled Transformation](./case-studies/case-study-template-3-ai-transformation.md) | AI-assisted investigation · alert triage · governance |
+| # | Title | Crypto angle |
+|---|-------|--------------|
+| 1 | [Compliance & Data Controls](./case-studies/01-compliance-data-controls.md) | KYC data quality · control monitoring |
+| 2 | [Fraud Investigation Analytics](./case-studies/02-fraud-investigation-analytics.md) | Typology analysis · loss / control metrics |
+| 3 | [AI-Enabled Compliance Transformation](./case-studies/03-ai-compliance-transformation.md) | Alert triage · GenAI governance |
 
-Each case includes a **3-minute STAR pitch script** and **Crypto Translation** section for interview use.
+Each includes **STAR script** + **Crypto Translation** for interviews.
 
 ---
 
-## Compliance Ops KPI Framework
+## Knowledge Base
 
-Metrics I use to discuss TM / fraud program health with Risk & Compliance leadership:
-
-| KPI | Definition |
-|-----|------------|
-| **Alert rate** | Alerts per 1,000 active users (by rule / typology) |
-| **False positive rate** | FP ÷ (FP + TP) after disposition |
-| **Rule hit rate** | Alerts triggered ÷ eligible transactions |
-| **MTTR** | Mean time to resolve case (hours) |
-| **SLA compliance %** | Cases closed within SLA ÷ total closed |
-| **SAR conversion rate** | SARs filed ÷ cases escalated |
-| **Analyst throughput** | Cases closed per analyst per week |
-
-Full definitions: [TM Dashboard schema doc](./projects/tm-dashboard/DATA_SCHEMA.md#kpi-definitions)
+| Doc | Purpose |
+|-----|---------|
+| [AML & Crypto Glossary](./knowledge/aml-crypto-glossary.md) | 50 terms for interviews |
+| [Fraud Typologies Cheatsheet](./knowledge/fraud-typologies-cheatsheet.md) | Exchange-relevant typologies |
 
 ---
 
@@ -118,92 +83,57 @@ Full definitions: [TM Dashboard schema doc](./projects/tm-dashboard/DATA_SCHEMA.
 
 | Domain | Tools |
 |--------|-------|
-| **Compliance & fraud** | KYC/CDD concepts · TM · typologies · SAR/STR workflow · FATF VASP (studying) |
-| **Analytics** | SQL · Python (pandas) · Power BI (DAX, Power Query) · Excel |
-| **Blockchain (concept + hands-on)** | Etherscan · public sanctions lists · on-chain tracing concepts · Chainalysis/Elliptic workflows (familiar) |
-| **AI** | GenAI for case notes & triage · prompt design · AI governance awareness |
-| **Consulting** | Requirements · workshops · KPI design · executive decks |
+| Compliance / Fraud | KYC · CDD · TM · SAR/STR · typologies · FATF VASP (studying) |
+| Analytics | SQL · Power BI · Python (pandas) · Excel |
+| Blockchain | Etherscan · sanctions lists · on-chain tracing concepts |
+| AI | GenAI for case triage · prompt design · human-in-the-loop |
+| Certs | PL-300 (in progress) · ACAMS CCAS (planned) |
 
 ---
 
-## Certifications
+## Repository Map
 
-| Certification | Status |
-|---------------|--------|
-| Microsoft PL-300 (Power BI Data Analyst) | In progress — 2026 |
-| ACAMS CCAS (Certified Cryptoasset AFC Specialist) | Planned |
-| [CAMS / other] | [Add if applicable] |
-
----
-
-## Experience
-
-### Deloitte — [Title, e.g. Senior Consultant / Analyst]
-**[City, China]** · **[Start Year] – Present**
-
-- [Quantified bullet: compliance / fraud / analytics delivery]
-- [Bullet: SQL / Power BI / Python on engagement]
-- [Bullet: stakeholder management — Risk, Legal, Compliance, IT]
-- [Bullet: control testing, fraud investigation support, or rule/process improvement]
-
-**Focus areas:** Compliance advisory · Fraud & data analytics · Digital / AI-enabled transformation  
-**Industries:** [Financial Services · TMT · Consumer · etc.]
-
-### Education
-
-**B.Sc. Computer Science** — [University] · [Year]
+```
+portfolio/  (crypto branch)
+├── README.md                          ← you are here
+├── case-studies/                      ← Deloitte STAR cases (anonymized)
+├── projects/
+│   ├── 01-tm-dashboard/               ← synthetic TM data + PBI
+│   ├── 02-onchain-aml-explorer/       ← public chain demo
+│   ├── 03-compliance-kpi-framework/   ← KPI definitions doc
+│   └── 04-sql-alert-analytics/        ← alert analysis SQL
+├── knowledge/                         ← glossary & typologies
+├── career/                            ← target cos & templates (no private data)
+├── assets/screenshots/                ← dashboard screenshots
+├── certifications/                    ← cert links & badges
+└── archive/learning/                  ← PL-300 plan, study notes
+```
 
 ---
 
-## Industry Knowledge (self-study)
+## Career Materials
 
-| Area | Coverage |
-|------|----------|
-| Crypto fraud typologies | Onboarding fraud · ATO · bonus abuse · layering · P2P scams |
-| Regulatory landscape | FATF · MAS · SFC · Travel Rule (overview) |
-| Chain analytics | Entity attribution · mixer exposure · cross-chain flow (conceptual + public-data labs) |
-
-Reference notes: [Fraud typologies cheatsheet](./projects/tm-dashboard/DATA_SCHEMA.md#fraud-typology-mapping) *(in schema doc)*
+- [Target companies & role keywords](./career/target-companies.md)
+- [Application tracker template](./career/application-tracker-template.md)
+- [Cover letter template](./career/cover-letter-template.md)
 
 ---
 
-## Languages
+## Experience Summary
 
-| Language | Level |
-|----------|-------|
-| Chinese | Native |
-| English | Professional (consulting & technical) |
+**Deloitte** — [Title] · [City] · [Years]  
+Compliance advisory · Fraud / data analytics · Management consulting · [Industries]
+
+**Education:** B.Sc. Computer Science — [University]
 
 ---
 
 ## Contact
 
-- **Email:** huangwendy166@gmail.com  
-- **LinkedIn:** [linkedin.com/in/YOUR_PROFILE](https://linkedin.com/in/YOUR_PROFILE)  
-- **GitHub:** [Huangjw12/data-ai-consulting-portfolio](https://github.com/Huangjw12/data-ai-consulting-portfolio)
+- **Email:** your.email@example.com
+- **LinkedIn:** [YOUR_PROFILE](https://linkedin.com/in/YOUR_PROFILE)
+- **GitHub:** [Huangjw12/data-ai-consulting-portfolio](https://github.com/Huangjw12/data-ai-consulting-portfolio/tree/crypto)
 
 ---
 
-## Repository Structure
-
-```
-portfolio/
-├── README.md
-├── projects/
-│   └── tm-dashboard/
-│       ├── DATA_SCHEMA.md          ← field dictionary + KPIs + star schema
-│       ├── schema.sql
-│       ├── generate_sample_data.py
-│       └── data/                   ← generated CSVs (gitignored if large)
-├── sql/
-├── python/
-├── case-studies/
-├── power-bi/
-│   └── tm-dashboard.pbix           ← (in progress)
-├── genai/
-└── architecture/
-```
-
----
-
-*Last updated: June 2026 · Synthetic data only · Client names anonymized*
+*Last updated: June 2026 · View this portfolio on the `crypto` branch*

@@ -10,10 +10,12 @@ desktop.ini
 *.pem
 credentials.json
 secrets.*
+**/users.json
 
-# Large / generated outputs (use Git LFS or external links if needed)
-# Uncomment if files exceed 50MB:
-# *.pbix
+# Generated / large data
+projects/01-tm-dashboard/data/*.csv
+*.pbix
+**/node_modules/
 
 # Python
 __pycache__/
@@ -21,14 +23,13 @@ __pycache__/
 .venv/
 venv/
 
-# Jupyter
-.ipynb_checkpoints/
-
-# Local notes not for public repo
+# Private planning (optional local only)
 notes-private/
 drafts/
+career/application-tracker-private.csv
 
-# Deloitte confidential — keep case studies anonymized; do not upload:
-# - client-named files
-# - internal Deloitte templates
-# - engagement codes / client logos
+# Unrelated personal projects (not part of crypto portfolio)
+Spontan/
+
+# Deloitte confidential reminders:
+# - no client names, engagement codes, or internal templates
